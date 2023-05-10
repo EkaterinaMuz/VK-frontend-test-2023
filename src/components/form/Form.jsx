@@ -51,6 +51,7 @@ export default function Form() {
                 <div className={styles.selectGroup}>
                     <MySelect
                         name="tower"
+                        id="tower"
                         options={optionsTower}
                         placeholder="Башня"
                         label="Выберите башню"
@@ -60,6 +61,7 @@ export default function Form() {
                     />
                     <MySelect
                         name="floor"
+                        id="floor"
                         options={optionsFloor}
                         placeholder="Этаж"
                         label="Выберите этаж"
@@ -71,8 +73,9 @@ export default function Form() {
                 <div>
                     <MySelect
                         name="bookedRooms"
+                        id="bookedRooms"
                         options={rooms}
-                        placeholder="Доступные команаты"
+                        placeholder="Доступные комнаты"
                         label="Выберите переговорную"
                         isMulti={true}
                         closeMenuOnSelect={false}
@@ -102,6 +105,7 @@ export default function Form() {
                 <div>
                     <CommentField
                         name="comment"
+                        id="comment"
                         placeholder="Прийти за 10 минут до начала..."
                         value={formInfo.comment}
                         onChange={(e) => handleChange(e, 'comment')}

@@ -20,6 +20,7 @@ export default function TimePicker({ handleChange, formInfo }) {
             <div className={styles.selectGroup}>
                 <MySelect
                     name="startTime"
+                    id="startTime"
                     options={startTimeOptions}
                     placeholder="Время начала"
                     label="Выберите время начала"
@@ -29,6 +30,7 @@ export default function TimePicker({ handleChange, formInfo }) {
                 />
                 <MySelect
                     name="endTime"
+                    id="endTime"
                     options={endTimeOptions}
                     placeholder="Время окончания"
                     label="Выберите время окончания"

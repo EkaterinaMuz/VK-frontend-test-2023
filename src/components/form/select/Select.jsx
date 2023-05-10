@@ -8,6 +8,7 @@ export default function MySelect({
     placeholder,
     label,
     name,
+    id,
     icon,
     noOptionsMessage,
     closeMenuOnSelect,
@@ -22,7 +23,8 @@ export default function MySelect({
 
     return (
         <div>
-            <span
+            <label
+                htmlFor={id}
                 style={{
                     display: 'inline-block',
                     marginBottom: '3px',
@@ -32,12 +34,13 @@ export default function MySelect({
                 }}
             >
                 {label}
-            </span>
+            </label>
             <Select
                 className={styles.reactSelect}
                 classNamePrefix="reactSelect"
                 noOptionsMessage={noOptionsMessage}
                 name={name}
+                id={id}
                 placeholder={placeholder}
                 options={options}
                 isClearable
