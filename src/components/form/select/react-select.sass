@@ -1,0 +1,59 @@
+.reactSelect
+    &-container
+        position: relative
+        width: 100% !important
+        min-height: 1.5em
+        border: .05em solid #C4C5C7
+        display: flex
+        align-items: center
+        gap: 0.5em
+        padding: 0.5em
+        border-radius: 0.25em
+        outline: none !important
+        &:focus,
+        &:active
+            outline: none !important
+
+    &__control
+        max-width: 100%
+        padding-left: 7px
+        outline: none !important
+        background-color: var( --colors-bg-field) !important
+        cursor: pointer !important
+
+    &__option
+        color: var(--colors-text) !important
+        cursor: pointer !important
+        &--is-focused
+            background-color: var(--colors-option) !important
+            color: #000000 !important
+
+    &__menu
+        background-color: var(--colors-bg-field) !important
+
+    &__menu-list
+        &::-webkit-scrollbar
+            width: 16px
+        &::-webkit-scrollbar-thumb
+            height: 77px
+            background-color: var(--colors-scrollbar)
+            border-radius: 10px
+            box-shadow: inset 0 0 0 5px var(--colors-bg-field)
+
+    &__single-value
+        color: var(--colors-text) !important
+
+    &__multi-value
+        border: 0.05em solid #0077FF
+        border-radius: 0.25em
+        padding: 0.15em 0.35em
+        gap: 0.25em
+        cursor: pointer
+        background-color: var(--colors-option) !important
+        outline: none
+
+        &__label
+            font-weight: 700
+            color: var(--colors-badge-text) !important
+        &__remove
+            color: hsl(0, 0%, 40%)

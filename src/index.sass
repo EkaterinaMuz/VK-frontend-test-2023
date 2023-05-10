@@ -1,0 +1,46 @@
+@font-face
+  font-family: 'SFPro'
+  src: url('assets/fonts/SFProText-Regular.ttf')
+
+body[data-theme='dark']
+  --colors-bg-base: #222222
+  --colors-bg-field: #333333
+  --colors-option: #A9A9A9
+  --colors-text: #FFFFFF
+  --colors-label: #FFFFFF
+  --colors-badge-text: #222222
+  --colors-scrollbar: #222222
+  --colors-bg: #141414
+  --colors-shadow: rgba(0, 0, 0, 0.4)
+  --fw: 400
+
+body[data-theme='light']
+  --colors-bg-base: #FFFFFF
+  --colors-bg-field: #FFFFFF
+  --colors-option: #DEEBFF
+  --colors-text: #000000
+  --colors-label: #3538CD
+  --colors-badge-text: #3538CD
+  --colors-scrollbar: #DAE2EA
+  --colors-bg: #EDEEF0
+  --colors-shadow: rgba(0, 119, 255, 0.4)
+  --fw: 700
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'SFPro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  background-color: var(--colors-bg)
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+li
+  list-style: none
