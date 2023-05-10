@@ -7,7 +7,7 @@ import styles from './ThemeContext.module.sass';
 export default function ThemeSwitcher() {
     const { theme, toggleTheme } = useContext(ThemeContext);
     return (
-        <div className={styles.switcher} onClick={toggleTheme}>
+        <button type="button" className={styles.switcher} onClick={toggleTheme}>
             {theme === 'light' ? (
                 <BsSun className={styles.sun} />
             ) : (
@@ -16,6 +16,6 @@ export default function ThemeSwitcher() {
             <span className={styles.text}>
                 {theme === 'light' ? 'Светлая' : 'Темная'} тема
             </span>
-        </div>
+        </button>
     );
 }

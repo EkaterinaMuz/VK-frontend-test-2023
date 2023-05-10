@@ -12,7 +12,6 @@ export default function useFindTimeDiff(formInfo) {
             hours -= 1;
             minutes = '30';
         }
-        console.log(hours, minutes);
         return { hours, minutes };
     };
     return findTimeDiff;

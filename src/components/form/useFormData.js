@@ -24,7 +24,6 @@ export default function useFormData(initialState) {
                 ...formInfo,
                 [name]: value,
             });
-        console.log(formInfo);
     };
 
     // Функция сброса полей
