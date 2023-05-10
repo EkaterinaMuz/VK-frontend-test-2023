@@ -9,18 +9,22 @@ export default function useFormData(initialState) {
     const handleChange = (e, name) => {
         // проверяем какое поле изменилось, получаем его value из event'a и обновляем его
         let value;
+        // если поле возвращает строку
         if (name === 'name' || name === 'comment' || name === 'date') {
             value = e.target.value;
+            // если поле возвращает массив объектов
         } else if (name === 'bookedRooms') {
-            if (formInfo.bookedRooms.length < 4) value = [...e];
+            if (e.length < 5) value = [...e];
+            // если поле возвращает объект
         } else {
             value = e;
         }
-        value &&
+        value !== undefined &&
             setFormInfo({
                 ...formInfo,
                 [name]: value,
             });
+        console.log(formInfo);
     };
 
     // Функция сброса полей

@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+## Форма должна содержать следующие элементы:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[x] Выпадающий список с выбором башни (А или Б)
+![Выбор башни](%PUBLIC_URL%/preview/tower.png)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+[x] Выпадающий список с выбором этажа (с 3 по 27)
+![Выбор этажа](%PUBLIC_URL%/preview/towefloor.png)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[x] Выпадающий список с выбором переговорки. На каждом этаже 10 переговорок
+![Выбор переговорки](%PUBLIC_URL%/preview/rooms.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+[x] Выбор даты
+![Выбор даты](%PUBLIC_URL%/preview/date.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+[x] Выбор интервала времени
+Выбор времени окончания возможен, только после выбора времени начала
+![Выбор времени окончания](%PUBLIC_URL%/preview/endTime.png)
+![Выбор времени начала](%PUBLIC_URL%/preview/startTime.png)
+Время начала и конца зависят друг от друга и синхронизирются. Поэтому выбрать время начала больше, чем время окончания невозможно
+![Синхронизация времени](%PUBLIC_URL%/preview/time.png)
+При выборе времени бронирования рассчитывается продолжительность брони
+![Синхронизация времени](%PUBLIC_URL%/preview/timeDiff.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[x] Поле ввода комментария (textarea) и кнопки "Очистить" и "Отправить"
+![Комментарий и кнопки](%PUBLIC_URL%/preview/btns.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[x] Кнопка "Отправить" (по нажатию - выводит в консоль данные формы в виде json) и уведомляет пользователя
+![Уведомление](%PUBLIC_URL%/preview/results.png)

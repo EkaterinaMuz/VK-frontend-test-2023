@@ -40,7 +40,7 @@ export default function MySelect({
                 name={name}
                 placeholder={placeholder}
                 options={options}
-                isClearable={true}
+                isClearable
                 isSearchable={false}
                 closeMenuOnSelect={closeMenuOnSelect}
                 blurInputOnSelect
