@@ -6,7 +6,7 @@ export default function FormBanner() {
         <div className={styles.banner}>
             <img
                 className={styles.bannerLogo}
-                src={process.env.PUBLIC_URL + 'VK_logo.svg'}
+                src={process.env.PUBLIC_URL + '/VK_logo.svg'}
                 alt="Лого ВК"
             />
         </div>
